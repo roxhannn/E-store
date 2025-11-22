@@ -15,7 +15,7 @@ export default function CartPage() {
     return (
       <div className="flex flex-col items-center justify-center h-[70vh] text-gray-600">
         <MdRemoveShoppingCart className="text-6xl text-pink-500 mb-4" />
-        <h2 className="text-2xl font-semibold mb-2">Your cart is empty!!!!!!!!!!!!!!!!!!!!!!!!!!!</h2>
+        <h2 className="text-2xl font-semibold mb-2">Your cart is empty!</h2>
         <p className="text-gray-500 mb-6">Looks like you haven’t added anything yet.</p>
         <a
           href="/"
