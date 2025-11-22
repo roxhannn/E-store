@@ -14,12 +14,22 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth <= 640) {
-        if (window.scrollY > lastScrollY) {
+        const currentY = window.scrollY;
+
+        if (currentY <= 0) {
+          setShowHeader(true);
+          setLastScrollY(0);
+          return;
+        }
+
+        if (currentY > lastScrollY) {
           setShowHeader(false);
-        } else {
+        }
+        else {
           setShowHeader(true);
         }
-        setLastScrollY(window.scrollY);
+
+        setLastScrollY(currentY);
       }
     };
 
