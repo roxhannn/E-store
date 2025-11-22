@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Container from "@/Component/Container";
-import ProductBox from "@/Component/ProductBox";
+import Container from "@/component/Container";
+import ProductBox from "@/component/ProductBox";
 import { categoryapi, productapi } from "@/library";
 
 export default function StorePage() {
